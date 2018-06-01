@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/app.css?rev=@@hash">
+</head>
+<body>
+  <div class="warper">
+    <!--头图s -->
+    <div class="toppic">
+        <img src="https://img.alicdn.com/tfs/TB1355nXQyWBuNjy0FpXXassXXa-1920-450.png" alt="">
+    </div>
+    <!--头图e -->
+    <!--头图下s -->
+    <div class="baiqu">
+      逗比
+    </div>
+    <!--头图下e -->
+    <!--蓝色区s -->
+    <div class="lansequ">
+      <p class="firstp">{{renzhenfangshi}}</p>
+      <p class="secondp">{{renzhengdes}}</p>
+      <div class="renzhenfs1">
+        <ul>
+          <li>
+            <img src="{{shirenrzlog}}" alt="">
+            <p class="renzp1">{{shirenrz}}</p>
+            <p class="renzp2">{{shirenrzdes}}</p>
+          </li>
+          <li>
+              <img src="{{getirzlog}}" alt="">
+              <p class="renzp1">{{getirz}}</p>
+              <p class="renzp2">{{getirzdes}}</p>
+            </li>
+        </ul>
+
+      </div>
+      
+      <div class="renzhenfs2">
+        <ul>
+          <li>
+              <img src="{{qiyefrzlog}}" alt="">
+              <p class="renzp1">{{qiyerz}}</p>
+              <p class="renzp2">{{qiyerzdes}}</p>
+          </li>
+          <li>
+              <img src="{{qiyerzlog}}" alt="">
+              <p class="renzp1">{{qiyefrz}}</p>
+              <p class="renzp2">{{qiyefrzdes}}</p>
+          </li>
+          <li>
+              <img src="{{zhifubaorzlog}}" alt="">
+              <p class="renzp1">{{zhifubaorz}}</p>
+              <p class="renzp2">{{zhifubaorzdes}}</p>
+          </li>
+        </ul>
+      </div>  
+    </div>
+    <!--蓝色区e -->
+    <!--用户权益s -->
+    <div class="yonghuquanyi">
+      <p class="firstp">{{yonghuquanyi}}</p>
+      <p class="secondp">{{yonghuquanyides}}</p>
+      <div class="yonghuquanyi_fenxi">
+        <ul>
+            {{#each (items1) }}
+          <li>
+            <img src="{{item_lianjie}}" alt="">
+            <p>{{item_wenzi}}</p>
+            <a>{{item_wenziyingwen}}</a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+
+    </div>
+    <!--用户权益e -->
+    <!-- 常见问题s -->
+    <div class="changjianwent">
+      <p>常见问题</p>
+      <div class="changjianwent_wa">
+        <ul>
+            {{#each (items) }}
+          <li><a href="{{item_lianjie}}" target="_blank">{{item_wenzi}}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <!--常见问题e -->
+    <!--用户反馈调研s -->
+    <div class="footer">
+      <a href="{{fankuidiaoyanlianjie}}">{{fankuidiaoyan}}</a>
+    </div>
+    <!--用户反馈调研e -->
+
+  </div>
+
+  <script src="scripts/all.js?rev=@@hash"></script>
+</body>
+
+</html>
